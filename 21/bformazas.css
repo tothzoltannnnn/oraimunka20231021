@@ -1,0 +1,39 @@
+nav{
+    grid-area: n;
+}
+#fotartalom{
+    grid-area: ft;
+    
+}
+#bejelentkezes{
+    grid-area: b;
+}
+#jobbt{
+    grid-area: jt;
+}
+#balt{
+    grid-area: bt;
+}
+#keszitette{
+    grid-area: k;
+    
+}
+#osztaly{
+    grid-area: o;
+}
+#elerhetoseg{
+    grid-area: e;
+    
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'bt n jt'
+    'bt ft ft'
+    'k k o'
+    'e e e'
+    ;
+}
+
