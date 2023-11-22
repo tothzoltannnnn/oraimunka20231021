@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="autor" content="Tóth Zoltán">
+  <meta name="keyword" content="Pizza">
+  <meta name="description" content="Pizza, rendelés">
+  <link rel="stylesheet" href="rendeles.css">
+  <title>Rendelés</title>
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="fooldal.html">Ízek világa</a></li>
+            <li><a href="etlap.html">Étlap</a></li>
+            <li>Rendelés</li>
+            <li><a href="statisztika.html">Statisztika</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Online rendelés</h2>
+    <p>Újonnan alakult pizzériánk online rendelhető pizzai! Kérem rendelése során szorítkozón a lehető legpontosabb adatokra!</p>
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">Család név</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Az ön család neve?">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Kereszt név</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Az ön kereszt neve?">
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="etel">Pizza</label>
+        </div>
+        <div class="col-75">
+          <select id="etel" name="Pizza">
+            <option value="kertesz">Margaréta</option>
+            <option value="kertesz">Kertész</option>
+            <option value="kertesz">Háromsajtos</option>
+            <option value="piedone">Húsimádó</option>
+            <option value="piedone">Vadász</option>
+            <option value="piedone">Jekill / Hyde</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="telefon">Telefonszám</label>
+        </div>
+        <div class="col-75">
+          <input type="number" id="telefon" name="Telefonszám" placeholder="Értesítendő telefonszám">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lakas">Pontos címe</label>
+        </div>
+        <div class="col-75">
+          <textarea id="lakas" name="subject" placeholder="Kérem a pontos címét. Pl.:1134 Budapest, Róbert Károly körút 44." style="height:100px"></textarea>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <a href="futar.html">Elküld</a>
+      </div>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div id="reklam">            
+      <figure>
+          <img src="../kepek/pizza/reklam.jpg" alt="reklam" width="1200" height="250">           
+      </figure>          
+    </div>
+    <p>Készítette: Tóth Zoltán e-mail cím: toth.@gmail.com</p>
+  </footer>
+</body>
+</html>

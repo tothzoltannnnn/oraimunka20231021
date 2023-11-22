@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+  }
+  nav{
+    max-width: 300px;
+    padding: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+body{
+    background-color: antiquewhite;
+}
+#focim{
+    grid-area: fo;
+    width: 600px;
+    height: 100px;
+}
+#kert{
+    grid-area: ke;
+    width: 600px;
+    height: 100px;
+}
+#kert1{
+    grid-area: k1;
+    padding: 10px 10px 10px 10px;
+}
+#kert2{
+    grid-area: k2;
+    padding: 10px 10px 10px 10px;
+}
+#kert3{
+    grid-area: k3;
+    padding: 10px 10px 10px 10px;
+}
+#pie{
+    grid-area: pi;
+}
+#piedone1{
+    grid-area: p1;
+    padding: 10px 10px 10px 10px;
+}
+#piedone2{
+    grid-area: p2;
+    padding: 10px 10px 10px 10px;
+}
+#piedone3{
+    grid-area: p3;
+    padding: 10px 10px 10px 10px;
+}
+#reklam{
+    grid-area: re;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'fo fo fo'
+    'ke ke ke'
+    'k1 k2 k3'
+    'k1 k2 k3'
+    'k1 k2 k3'
+    'pi pi pi'
+    'p1 p2 p3'
+    'p1 p2 p3'
+    'p1 p2 p3'
+    ;
+}
+@media screen and (max-width: 1200px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'fo fo'
+        'ke ke'
+        'k1 k2'
+        'k1 k2'
+        'k3 k3'
+        'k3 k3'
+        'pi pi'
+        'p1 p2'
+        'p1 p2'
+        'p3 p3'
+        'p3 p3'
+        ;
+    }
+}
+@media screen and (max-width: 1000px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'fo'
+        'ke'
+        'k1'
+        'k1'
+        'k1'
+        'k2'
+        'k2'
+        'k2'
+        'k3'
+        'k3'
+        'k3'
+        'pi'
+        'p1'
+        'p1'
+        'p1'
+        'p2'
+        'p2'
+        'p2'
+        'p3'
+        'p3'
+        'p3'
+        ;
+    }
+}
+#reklam img {
+    max-width: 100%;
+    height: auto;
+  }
